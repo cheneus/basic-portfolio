@@ -1,0 +1,435 @@
+/*------------------------------*\
+    Main styling
+\*------------------------------*/
+
+*,
+*:before,
+*:after {
+  /*   // https://css-tricks.com/international-box-sizing-awareness-day/
+  // adding this 3 to enable each browser to properly render box-sizing system
+  // required due to it helps with maintaining the width of the system. */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4aaaa5;
+  text-align: center;
+  margin 40px 0;
+}
+
+hr {
+  border: solid 3px #cccccc;
+  width: 90%;
+  margin-bottom:25px;
+}
+
+img {
+  /*   max-height: 150px; */
+  width: 100%;
+  position: relative;
+  height: 200px;
+  padding: 5px;
+  border: 1px solid #cccccc; 
+}
+
+img[class=socialTag] {
+  min-height: 0px;
+  height: auto;
+  width: 80px;
+}
+
+section:last-child .column-half:last-child {
+  float:left !important;
+}
+
+.column-half:last-child {
+  float: right;
+}
+
+
+
+p {
+  color: #777777;
+  display: block;
+  text-align: justify;
+  padding: 0 5%;
+}
+
+p img {
+  clear:inherit;
+  margin: 0 10px;
+  padding: 5px;
+  float:left;
+  position: relative;
+  width: initial;
+}
+
+header {
+  display: block;
+  /*   padding-top: 30px; */
+  /*   padding-bottom: 30px; */
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: white;
+}
+
+footer {
+  display: block;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #666666;
+  border-top: 4px solid #4aaaa5;
+  text-align: center;
+}
+
+nav {
+  position: relative;
+  min-height: 50px;
+  height: 100px;
+  /*   margin-bottom: 20px; */
+  // padding-bottom: 30px;
+  border-bottom: 1px solid;
+}
+
+section {
+  padding: 5%;
+}
+
+section[id="about"] {
+  min-height: 900px;
+}
+
+body {
+  background-color: #dddddd;
+  margin: auto; // padding: 20px;
+}
+
+label {
+  display: block;
+}
+
+form {
+  padding:0 5%
+}
+
+
+/*------------------------------*\
+    Grid System
+\*------------------------------*/
+
+.row,
+.column {
+  box-sizing: border-box;
+  overflow: auto;
+  /*   width: 100%; */
+}
+
+
+/* used if you want to give elements after the row class a table so that they are uniformed. */
+
+
+/* .row:before, .row:after {
+  content: " ";
+  display: table;
+} */
+
+
+/*
+.row:after {
+  clear: both;
+} */
+
+
+/* used for column alignment so they dont stick together. */
+
+
+/* .column + .column {
+  margin-left: 1.6%;
+} */
+
+
+/*
+.column {
+  position: relative;
+  float: left;
+  display: block;
+}
+ */
+
+.column {
+  // background: #eee;
+  // border: 5px solid #ccc;
+  // border-radius: 4px;
+  color: #777;
+  /*   padding: 5px; */
+  min-height: 30px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 10px;
+  /*   overflow:auto; */
+}
+
+
+/* in relation to the class above. this is to clear thta the last element of the column clas is not affected by the margin-left. */
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.column-oneThird {
+  width: 32.2666666667%;
+  position: relative;
+  margin: auto;
+  float: left;
+  overflow: hidden;
+}
+
+div[class=sideBar] row .column-oneThird {
+
+}
+
+div[class=sideBar] .row:last-child {
+  margin-right:20px;
+}
+
+div[class=sideBar] .column-oneThird] {
+  margin-left:20px !important;
+}
+
+.column-half {
+  width: 35%;
+  // max-width: 35%;
+  position: relative;
+  float: left;
+  margin: 0 50px 10px 50px;
+}
+
+
+/* .column-half:last-child {
+  margin-right:auto;
+}
+
+.column-half:first-child {
+  margin-right:auto;
+} */
+
+
+/* testing purposes. */
+
+
+/* .column .column {
+  color: #eee;
+  background: #333;
+  border-color: #000;
+} */
+
+
+/*------------------------------*\
+    Class
+\*------------------------------*/
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.box {
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+}
+
+.form-control {
+  /*
+  height: 28px;
+  text-size:16px;
+  padding 12px 6px;
+  border-radius: 4px; */
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm {
+  display: block;
+  overflow: auto;
+  min-height: 800px;
+}
+
+.navBrand {
+  float: left !important;
+  width: 200px;
+  padding: 40px;
+  line-height: 20px;
+  font-size: 24px;
+  position: relative; // overflow: hidden;
+  background-color: #4aaaa5;
+  text-align: center;
+  color: white;
+}
+
+.navMenu {
+  float: right !important;
+  position: relative; // overflow: hidden;
+  margin-top:20px;
+}
+
+.headerBgc {
+  background-color: #cccccc;
+  border-color: #666666;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.footer {
+  background-color: #ffffff;
+}
+
+.mainContent {
+  background-color: #dddddd;
+  border-color: #dddddd;
+  min-width: 960px;
+  max-width: 1200px;
+  /*   // cannot be achieve due to usage of postion:abosolute in the cpation section of the img.  */
+  width: 100%;
+  height: auto;
+  display: table;
+  margin: auto;
+}
+
+.mainSection {
+  min-width: 650px;
+  width: 67%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  display: table;
+  float: left;
+  clear: both;
+}
+
+
+/* .mainSection:after {
+  position: relative;
+  float: left;
+  display: block;
+} */
+
+.sideBar {
+  min-width: 270px;
+/*   width: 30%; */
+  /*   height: 100%; */
+  /*   background-color:black; */
+  float: left; // overflow: hidden;
+  position: relative;
+  margin: 0 0 0 20px;
+  clear: bottom;
+  display: table;
+  /*   display: block; */
+}
+
+
+/* .sideBar:after {
+  position: relative;
+  float: left;
+  display: block;
+} */
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; // overflow: hidden; // background-color: #333;
+}
+
+.navList li {
+  float: right;
+  display: inline-block;
+  padding: 16px 5px 0 5px;
+}
+
+.navList li a {
+  display: block; // color: white;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  border-right: 1px solid black;
+}
+
+.navList li a:active {
+ color:white;
+ background-color: black;
+}
+
+.navList li:first-child a {
+  border-right: 0px solid black;
+}
+
+button[type=submit]:hover {
+  background-color: #0099ff;
+}
+
+
+/* #mainwrapper .box .caption { */
+
+#portfolio div .caption {
+  background-color: black;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  left: 0;
+  padding: 10px;
+  top: 120px;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+
+/* #portfolio div .static-caption { 
+    background-color: black;
+  position: static;
+  color: #fff;
+  z-index: 1;
+  left: 0;
+  top: 120px; 
+  width: 100%;
+  display: block;
+  height: auto;
+}; */
+
+#main-content {
+  background-color: #ffffff;
+}
+
+form label input:focus ,textarea:focus {
+  background-color:black;
+  color:white
+}
