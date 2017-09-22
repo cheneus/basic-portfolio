@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>Basic portfolio</title>
+  <title>Portfolio</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="asset/style.css">
+  <link rel="stylesheet" type="text/css" href="asset/style-default.css">
   <link rel="stylesheet" type="text/css" href="asset/reset.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
   <header>
     <!-- nav -->
     <nav>
@@ -20,89 +20,59 @@
         </div>
         <div class="navMenu" id="navMenu">
           <ul class="navList">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <div class="container ">
-    <div class="row mainContent ">
+  <div class="container-fluid">
+    <div class="row mainContent">
       <!-- main section -->
       <div class="mainSection box">
         <div class="row">
           <section id="about">
             <h2>About Me</h2>
-            <p class="">I am working towards to be a Fullstack Web Developer though. My goals is set upon Front-End for now. I have a degree in Information System and it was through my first internship/job that i was exposed to programming and how time consuming it was as well as the reward. </p>
-          </section>
-        </div>
-        <div class="row">
-          <section id="portfolio">
-            <h2>My Portfolio</h2>
-            <div class="row">
-              <div class="column column-half">
-                <img src="https://seeklogo.com/images/P/Pikachu-logo-D0AAA93F17-seeklogo.com.png" class="img-responsive img-fluid mx-sm-center rounded">
-                <span class="caption">Pika!</span>
-              </div>
-              <!--                             <div class="column column-oneThird">
-                                <img src="https://seeklogo.com/images/P/Pikachu-logo-D0AAA93F17-seeklogo.com.png" class="img-responsive img-fluid mx-sm-center rounded">
-                              <span class="caption">Pika!</span>
-                            </div> -->
-              <div class="column column-half">
-                <img src="https://seeklogo.com/images/P/Pikachu-logo-D0AAA93F17-seeklogo.com.png" class="img-responsive img-fluid mx-sm-center rounded">
-                <span class="caption">Pika!</span>
-              </div>
+            <hr></hr>
+            <div style="padding:0 5%">
+              <img src="asset/image/mew.png" alt="mew" style="width:200px; height: 200px;">
+              <p class="">
+                I am working towards to be a Fullstack Web Developer though. My goals is set upon Front-End for now. I have a degree in Information System and it was through my first internship/job that i was exposed to programming and how time consuming it was as well as the reward. </p>
             </div>
-            <div class="row">
-              <div class="column column-half">
-                <!-- <div class="col-sm-12"> -->
-                <img src="https://seeklogo.com/images/P/Pikachu-logo-D0AAA93F17-seeklogo.com.png" class="img-responsive img-fluid mx-sm-center rounded">
-              </div>
-              <!--                             <div class="column column-oneThird">
-                                <img src="https://seeklogo.com/images/P/Pikachu-logo-D0AAA93F17-seeklogo.com.png" class="img-responsive img-fluid mx-sm-center rounded">
-                            </div> -->
-              <div class="column column-half">
-                <img id="folioPreview" src="https://seeklogo.com/images/P/Pikachu-logo-D0AAA93F17-seeklogo.com.png" class="img-responsive img-fluid mx-sm-center rounded">
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="row">
-          <section id="contact">
-            <h2>Contact Form</h2>
-            <form>
-              <label for="name">Name :
-                <input type="text" class="form-control" placeholder="Name">
-              </label>
-              <label for="email">E-mail :
-                <input type="email" class="form-control" placeholder="E-mail">
-              </label>
-              <label for="message">Message :
-                <textarea type="text" class="form-control" row="20" placeholder="Message">
-                </textarea>
-              </label>
-              <button type="submit" class="form-control">Send</button>
-            </form>
           </section>
         </div>
       </div>
       <!-- sidebar -->
       <div class="column-side sideBar box">
-        <div class="row">
-          <h3>Connect with Me</h3>
+        <h3>Connect with Me</h3>
+        <div class="row centerFlexBox ">
           <div class="column column-oneThird">
-            <img class="socialTag"  src="https://cdn1.iconfinder.com/data/icons/black-socicons/512/linkedin-64.png" alt="">
+            <a href="www.github.com/cheneus"><img class="socialTag"  src="../asset/image/github.svg" alt="Github"></a>
           </div>
           <div class="column column-oneThird">
-            <img class="socialTag" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-64.png" alt="">
+            <a href=""><img class="socialTag" src="../asset/image/linkedin.png" alt="LinkedIn"></a>
           </div>
           <div class="column column-oneThird">
-            <img class="socialTag" src="https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/01-64.png" alt="">
+            <a href=""><img class="socialTag" src="../asset/image/stackoverflow.png" alt="StackOverflow"></a>
           </div>
         </div>
       </div>
-              <!-- sidebar -->
+      <!-- sidebar -->
     </div>
   </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+      Copyright 2017, Chen Sia
+    </div>
+    <div class="row">
+      <a href="basicMedia/index.html"><button class="form-control">MediaQ Applied Version</button></a>
+      <a href="bootstrap/index.html"><button class="form-control">Bootstrap Applied Version</button></a>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>

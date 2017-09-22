@@ -27,14 +27,15 @@ h6 {
 hr {
   border: solid 3px #cccccc;
   width: 90%;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
 img {
   /*   max-height: 150px; */
   width: 100%;
   min-height: 200px;
-  padding: 5px;
+  float: left;
+  overflow: hidden;
 }
 
 img[class=socialTag] {
@@ -44,7 +45,7 @@ img[class=socialTag] {
 }
 
 section:last-child .column-half:last-child {
-  float:left !important;
+  float: left !important;
 }
 
 .column-half:last-child {
@@ -84,6 +85,7 @@ nav {
   /*   margin-bottom: 20px; */
   // padding-bottom: 30px;
   border-bottom: 1px solid;
+  width: 100%;
 }
 
 section {
@@ -100,8 +102,16 @@ label {
 }
 
 form {
-  padding:0 5%
+  padding: 0 5%
 }
+
+
+
+
+
+
+
+
 
 
 /*------------------------------*\
@@ -114,6 +124,14 @@ form {
   overflow: auto;
   /*   width: 100%; */
 }
+
+
+
+
+
+
+
+
 
 
 /* used if you want to give elements after the row class a table so that they are uniformed. */
@@ -163,6 +181,14 @@ form {
 }
 
 
+
+
+
+
+
+
+
+
 /* in relation to the class above. this is to clear thta the last element of the column clas is not affected by the margin-left. */
 
 .row:last-child {
@@ -177,25 +203,35 @@ form {
   overflow: hidden;
 }
 
-div[class=sideBar] row .column-oneThird {
-
+.image-wrapper {
+  width: 240px;
+  height: 200px;
 }
 
+div[class=sideBar] row .column-oneThird {}
+
 div[class=sideBar] .row:last-child {
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 div[class=sideBar] .column-oneThird] {
-  margin-left:20px !important;
+  margin-left: 20px !important;
 }
 
 .column-half {
-  width: 35%;
-  // max-width: 35%;
+  width: 35%; // max-width: 35%;
   position: relative;
   float: left;
   margin: 0 40px 10px 45px;
 }
+
+
+
+
+
+
+
+
 
 
 /* .column-half:last-child {
@@ -262,6 +298,13 @@ div[class=sideBar] .column-oneThird] {
   border-radius: 4px;
 }
 
+footer .row .form-control {
+  width: auto;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
 .contactForm {
   display: block;
   overflow: auto;
@@ -283,7 +326,8 @@ div[class=sideBar] .column-oneThird] {
 .navMenu {
   float: right !important;
   position: relative; // overflow: hidden;
-  margin-top:20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .headerBgc {
@@ -321,6 +365,14 @@ div[class=sideBar] .column-oneThird] {
 }
 
 
+
+
+
+
+
+
+
+
 /* .mainSection:after {
   position: relative;
   float: left;
@@ -329,7 +381,7 @@ div[class=sideBar] .column-oneThird] {
 
 .sideBar {
   min-width: 270px;
-/*   width: 30%; */
+  /*   width: 30%; */
   /*   height: 100%; */
   /*   background-color:black; */
   float: left; // overflow: hidden;
@@ -339,6 +391,17 @@ div[class=sideBar] .column-oneThird] {
   display: table;
   /*   display: block; */
 }
+
+.centerFlexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+
+
+
 
 
 /* .sideBar:after {
@@ -368,8 +431,8 @@ div[class=sideBar] .column-oneThird] {
 }
 
 .navList li a:active {
- color:white;
- background-color: black;
+  color: white;
+  background-color: black;
 }
 
 .navList li:first-child a {
@@ -379,6 +442,14 @@ div[class=sideBar] .column-oneThird] {
 button[type=submit]:hover {
   background-color: #0099ff;
 }
+
+
+
+
+
+
+
+
 
 
 /* #mainwrapper .box .caption { */
@@ -397,6 +468,14 @@ button[type=submit]:hover {
 }
 
 
+
+
+
+
+
+
+
+
 /* #portfolio div .static-caption { 
     background-color: black;
   position: static;
@@ -413,7 +492,8 @@ button[type=submit]:hover {
   background-color: #ffffff;
 }
 
-form label input:focus ,textarea:focus {
-  background-color:black;
-  color:white
+form label input:focus,
+textarea:focus {
+  background-color: black;
+  color: white
 }

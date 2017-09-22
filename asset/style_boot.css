@@ -1,0 +1,58 @@
+body {
+	background-color: #cccccc;
+}
+
+hr {
+	border: 2px black solid;
+	width:90%;
+}
+
+div[id=navbarContent] ul li a {
+	color: #fff
+}
+
+nav {
+	color: #fff
+}
+
+footer {
+	background-color: #4aaaa5 !important;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+.paddingForFixed {
+	padding-bottom: 140px;
+}
+.socialTag {
+  min-height: 0px;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  float:left;
+}
+
+.image-wrapper {
+  width: 240px;
+  height: 200px !important;
+}
+
+#portfolio div .caption {
+  background-color: #4aaaa5;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  left: 1.25em;
+  padding: 10px;
+  top: 120px;
+  width: 212.5px;
+  height: auto;
+}
+
+footer .row .form-control {
+  width: auto;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}

@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="asset/style.css">
-  <link rel="stylesheet" type="text/css" href="asset/reset.css">
+  <link rel="stylesheet" type="text/css" href="../asset/style.css">
+  <link rel="stylesheet" type="text/css" href="../asset/reset.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <div class="navMenu" id="navMenu">
           <ul class="navList">
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </div>
@@ -36,24 +36,26 @@
           <section id="about">
             <h2>About Me</h2>
             <hr></hr>
-            <p class="">
-            <img src="asset/image/mew.png" alt="mew">
-            I am working towards to be a Fullstack Web Developer though. My goals is set upon Front-End for now. I have a degree in Information System and it was through my first internship/job that i was exposed to programming and how time consuming it was as well as the reward. </p>
+            <div style="padding:0 5%">
+              <img src="../asset/image/mew.png" alt="mew" style="width:200px; height: 200px;">
+              <p class="">
+                I am working towards to be a Fullstack Web Developer though. My goals is set upon Front-End for now. I have a degree in Information System and it was through my first internship/job that i was exposed to programming and how time consuming it was as well as the reward. </p>
+            </div>
           </section>
         </div>
       </div>
       <!-- sidebar -->
       <div class="column-side sideBar box">
-        <div class="row">
-          <h3>Connect with Me</h3>
+        <h3>Connect with Me</h3>
+        <div class="row centerFlexBox ">
           <div class="column column-oneThird">
-            <a href="www.github.com/cheneus"><img class="socialTag"  src="asset/image/github.svg" alt="Github"></a>
+            <a href="www.github.com/cheneus"><img class="socialTag"  src="../asset/image/github.svg" alt="Github"></a>
           </div>
           <div class="column column-oneThird">
-            <a href=""><img class="socialTag" src="asset/image/linkedin.png" alt="LinkedIn"></a>
+            <a href=""><img class="socialTag" src="../asset/image/linkedin.png" alt="LinkedIn"></a>
           </div>
           <div class="column column-oneThird">
-            <a href=""><img class="socialTag" src="asset/image/stackoverflow.png" alt="StackOverflow"></a>
+            <a href=""><img class="socialTag" src="../asset/image/stackoverflow.png" alt="StackOverflow"></a>
           </div>
         </div>
       </div>
@@ -63,6 +65,10 @@
   <footer>
     <div class="container-fluid">
       Copyright 2017, Chen Sia
+    </div>
+     <div class="row">
+      <a href="../index.html"><button class="form-control">Base Version</button></a>
+      <a href="../bootstrap/index.html"><button class="form-control">Bootstrap Applied Version</button></a>
     </div>
   </footer>
 </body>
